@@ -1,0 +1,11 @@
+header {
+    background-color: black;
+    color: white;
+    padding : 10px ;
+}
+
+header .title {
+    font-size: large;
+    font-weight: bold;
+    text-align: start;
+}

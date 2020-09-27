@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` test suite for Calculator should render calculator component for given parameters 1`] = `
+<form>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column"
+  >
+    <div
+      className="MuiGrid-root formBox"
+    >
+      <div
+        className="MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root"
+        >
+          <br />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline input"
+          onClick={[Function]}
+          onInput={[Function]}
+          required={true}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            id="input_one"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Input One"
+            required={true}
+            type="number"
+            value={2}
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root"
+      >
+        <br />
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline input"
+          onClick={[Function]}
+          required={true}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            id="input_two"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Input Two"
+            required={true}
+            type="number"
+            value={3}
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root"
+      >
+        <br />
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <span
+          className="button"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+            disabled={false}
+            id="button1"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+               + 
+            </span>
+          </button>
+        </span>
+        <span
+          className="button"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+               - 
+            </span>
+          </button>
+        </span>
+        <span
+          className="button"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+               * 
+            </span>
+          </button>
+        </span>
+        <span
+          className="button"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+               / 
+            </span>
+          </button>
+        </span>
+      </div>
+      <div
+        className="MuiGrid-root"
+      >
+        <br />
+        <br />
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+             Clear 
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiGrid-root"
+      >
+        <br />
+      </div>
+      <div
+        className="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink={true}
+          htmlFor="output"
+          id="output-label"
+        >
+          Output
+        </label>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          onClick={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiInputBase-input MuiInput-input"
+            disabled={false}
+            id="output"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="number"
+            value={5}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;

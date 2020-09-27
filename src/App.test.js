@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
+import ReactDOM from 'react-dom';
+import Header from './components/Header'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+xtest('renders learn react link', () => {
+  const div = document.createElement('Header');
+  ReactDOM.render(<App />, div);
 });
