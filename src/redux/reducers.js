@@ -1,4 +1,4 @@
-import {SET_INPUT_ONE,SET_INPUT_TWO, OUTPUT, CLEAR, ERROR} from '../redux/action_types'
+import {SET_INPUT_ONE,SET_INPUT_TWO, OUTPUT, CLEAR, ERROR, VALIDATION_ERROR} from '../redux/action_types'
 
 const initialState = {
     inputOne : '',
@@ -26,7 +26,8 @@ const initialState = {
       case OUTPUT:{
         return {
             ...state,
-            output: action.data
+            output: action.data.toFixed(5),
+            hasError: false
         }
     }
         case CLEAR:{
@@ -43,6 +44,13 @@ const initialState = {
                 ...state,
                 hasError: true,
                 output: 0
+            }
+        }
+        case VALIDATION_ERROR:{
+            return {
+                ...state,
+                hasError: 'validation_error',
+                output: action.data
             }
         }
         default:

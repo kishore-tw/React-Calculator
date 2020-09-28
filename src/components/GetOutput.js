@@ -1,4 +1,4 @@
-import React,  { useEffect } from 'react'
+import React from 'react'
 import Calculator from './Calculator'
 
 function GetOutput({ inputOne, inputTwo, output, hasError, setInputValues, setOutput}) {

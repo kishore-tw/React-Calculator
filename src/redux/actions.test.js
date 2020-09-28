@@ -22,6 +22,15 @@ describe("test suite for actions", () => {
       expect(actions.setInputValues("inputOne",mockInputOne)).toEqual(expectedAction)
   })
 
+  test("test to trigger action to set input one", () => {
+    const mockInputTwo = 4
+    const expectedAction = {
+      type: action_types.SET_INPUT_TWO,
+      data: mockInputOne
+    }
+    expect(actions.setInputValues("inputOne",mockInputTwo)).toEqual(expectedAction)
+})
+
     test("test to trigger action for addition", () => {
         const expectedErrorAction = {
           type: action_types.ERROR
