@@ -38,7 +38,7 @@ const initialState = {
                 inputTwo : '',
                 output: 0
             }
-}
+        }
         case ERROR:{
             return {
                 ...state,

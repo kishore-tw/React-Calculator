@@ -1,10 +1,13 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import App from './App';
 import ReactDOM from 'react-dom';
-import Header from './components/Header'
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
-xtest('renders learn react link', () => {
+test('renders App', () => {
   const div = document.createElement('Header');
-  ReactDOM.render(<App />, div);
+  ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>, div);
 });

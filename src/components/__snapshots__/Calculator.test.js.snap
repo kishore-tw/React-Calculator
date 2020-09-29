@@ -23,8 +23,6 @@ exports[` test suite for Calculator should render calculator component for given
         <div
           className="MuiInputBase-root MuiInput-root MuiInput-underline input"
           onClick={[Function]}
-          onInput={[Function]}
-          required={true}
         >
           <input
             className="MuiInputBase-input MuiInput-input"
@@ -34,8 +32,7 @@ exports[` test suite for Calculator should render calculator component for given
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Input One"
-            required={true}
-            type="number"
+            type="text"
             value={2}
           />
         </div>
@@ -51,7 +48,6 @@ exports[` test suite for Calculator should render calculator component for given
         <div
           className="MuiInputBase-root MuiInput-root MuiInput-underline input"
           onClick={[Function]}
-          required={true}
         >
           <input
             className="MuiInputBase-input MuiInput-input"
@@ -61,8 +57,7 @@ exports[` test suite for Calculator should render calculator component for given
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Input Two"
-            required={true}
-            type="number"
+            type="text"
             value={3}
           />
         </div>
@@ -81,7 +76,7 @@ exports[` test suite for Calculator should render calculator component for given
           <button
             className="MuiButtonBase-root MuiButton-root MuiButton-contained"
             disabled={false}
-            id="button1"
+            id="plus"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -110,6 +105,7 @@ exports[` test suite for Calculator should render calculator component for given
           <button
             className="MuiButtonBase-root MuiButton-root MuiButton-contained"
             disabled={false}
+            id="minus"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -138,6 +134,7 @@ exports[` test suite for Calculator should render calculator component for given
           <button
             className="MuiButtonBase-root MuiButton-root MuiButton-contained"
             disabled={false}
+            id="multiply"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -166,6 +163,7 @@ exports[` test suite for Calculator should render calculator component for given
           <button
             className="MuiButtonBase-root MuiButton-root MuiButton-contained"
             disabled={false}
+            id="divide"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -201,6 +199,7 @@ exports[` test suite for Calculator should render calculator component for given
         <button
           className="MuiButtonBase-root MuiButton-root MuiButton-contained"
           disabled={false}
+          id="clear"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -229,10 +228,15 @@ exports[` test suite for Calculator should render calculator component for given
         <br />
       </div>
       <div
-        className="MuiFormControl-root MuiTextField-root"
+        className="MuiGrid-root"
+      >
+        <br />
+      </div>
+      <div
+        className="MuiFormControl-root MuiTextField-root textField"
       >
         <label
-          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled"
           data-shrink={true}
           htmlFor="output"
           id="output-label"
@@ -240,23 +244,36 @@ exports[` test suite for Calculator should render calculator component for given
           Output
         </label>
         <div
-          className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
           onClick={[Function]}
         >
           <input
             aria-invalid={false}
             autoFocus={false}
-            className="MuiInputBase-input MuiInput-input"
+            className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
             disabled={false}
             id="output"
             onAnimationStart={[Function]}
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            readOnly={true}
             required={false}
             type="number"
             value={5}
           />
+          <fieldset
+            aria-hidden={true}
+            className="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="PrivateNotchedOutline-legendLabelled-3 PrivateNotchedOutline-legendNotched-4"
+            >
+              <span>
+                Output
+              </span>
+            </legend>
+          </fieldset>
         </div>
       </div>
     </div>

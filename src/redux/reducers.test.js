@@ -2,17 +2,17 @@ import reducer from '../redux/reducers'
 import * as types from './action_types'
 
 describe('test suite for reducer', () => {
-    it('should return the initial state', () => {
+    test('should return the initial state', () => {
       expect(reducer(undefined, {})).toEqual(
-        {"hasError": false, "inputOne": "", "inputTwo": "", "output": 0})
+        {hasError: false, inputOne: "", inputTwo: "", output: 0})
     })
 
-    it('should handle set input one', () => {
+    test('should handle set input one', () => {
         const mockInputOne = 4
         expect(
           reducer([], {
             type: types.SET_INPUT_ONE,
-            data: mockInputOne
+            data: 4
           })
         ).toEqual({
             inputOne: mockInputOne,
@@ -20,7 +20,7 @@ describe('test suite for reducer', () => {
           })
     })
 
-    it('should handle set input two', () => {
+    test('should handle set input two', () => {
         const mockInputTwo = 4
         expect(
           reducer([], {
@@ -33,7 +33,7 @@ describe('test suite for reducer', () => {
           })
     })
 
-    it('should handle output', () => {
+    test('should handle output', () => {
         const mockOutput = 4
         expect(
           reducer([], {
@@ -41,11 +41,12 @@ describe('test suite for reducer', () => {
             data: mockOutput
           })
         ).toEqual({
-            output: mockOutput
+            output: mockOutput,
+            hasError: false
           })
     })
 
-    it('should handle clear', () => {
+    test('should handle validation error', () => {
         expect(
           reducer([], {
             type: types.CLEAR
@@ -58,7 +59,7 @@ describe('test suite for reducer', () => {
           })
     })
 
-    it('should handle error', () => {
+    test('should handle error', () => {
         expect(
           reducer([], {
             type: types.ERROR
@@ -68,4 +69,14 @@ describe('test suite for reducer', () => {
             output: 0
           })
     })
+
+    test('should handle error', () => {
+      expect(
+        reducer([], {
+          type: types.VALIDATION_ERROR
+        })
+      ).toEqual({
+        hasError: 'validation_error'
+        })
+  })
 })
