@@ -22,14 +22,14 @@ const initialState = {
               inputTwo: action.data,
               hasError: false
           }
-      }
-      case OUTPUT:{
-        return {
-            ...state,
-            output: action.data.toFixed(5),
-            hasError: false
         }
-    }
+        case OUTPUT:{
+            return {
+                ...state,
+                output: Number(action.data.toFixed(5)),
+                hasError: false
+            }
+        }
         case CLEAR:{
             return {
                 ...state,
@@ -38,7 +38,7 @@ const initialState = {
                 inputTwo : '',
                 output: 0
             }
-        }
+}
         case ERROR:{
             return {
                 ...state,
@@ -49,13 +49,12 @@ const initialState = {
         case VALIDATION_ERROR:{
             return {
                 ...state,
-                hasError: 'validation_error',
-                output: action.data
+                hasError: 'validation_error'
             }
         }
         default:
-          return state
-      }
+            return state
+        }
   }
 
   export default calculatorApp

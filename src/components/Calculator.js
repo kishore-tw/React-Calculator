@@ -38,7 +38,11 @@ return (
         <Grid item>
             <Button variant="contained" id="clear" onClick = {data => onClickChange("clear")}> Clear </Button></Grid>
         <Grid><br/></Grid>
-        <TextField label="Output" id="output" value={output}  type="number" />
+        <Grid><br/></Grid>
+        <TextField className = "textField" size="small" label="Output" variant="outlined" id="output" value={output}  type="number" 
+        InputProps={{
+            readOnly: true,
+          }}/>
     </Grid>
     </Grid>
     </form>
