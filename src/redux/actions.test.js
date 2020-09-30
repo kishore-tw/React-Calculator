@@ -10,8 +10,9 @@ describe("test suite for actions", () => {
         inputOne:10,
         inputTwo:5
       }
-      store.getState = () => mockState
-  });
+    store.getState = () => mockState
+    });
+  
     test("test to trigger action for clear", () => {
         const expectedErrorAction = {
           type: action_types.CLEAR,
@@ -60,7 +61,7 @@ describe("test suite for actions", () => {
       data: 15
     }
     expect(actions.setOutput("+")).toEqual(expectedErrorAction)
-})
+  })
 
   test("test to trigger action for subtract", () => {
       const expectedErrorAction = {
@@ -95,6 +96,18 @@ describe("test suite for actions", () => {
     const expectedErrorAction = {
       type: action_types.VALIDATION_ERROR,
       data: ''
+    }
+    expect(actions.setOutput("/")).toEqual(expectedErrorAction)
+  })
+
+  test("test to trigger action for error", () => {
+    const mockState = {
+      inputOne:'',
+      inputTwo:''
+    }
+    store.getState = () => mockState
+    const expectedErrorAction = {
+      type: action_types.ERROR
     }
     expect(actions.setOutput("/")).toEqual(expectedErrorAction)
   })
