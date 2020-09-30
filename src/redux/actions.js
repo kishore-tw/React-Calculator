@@ -4,7 +4,7 @@ import store from '../redux/store'
 export function setOutput(inputType) {
     var input1 = store.getState().inputOne
     var input2 = store.getState().inputTwo
-
+    
     if (inputType === "clear"){
         return {
             type: CLEAR,

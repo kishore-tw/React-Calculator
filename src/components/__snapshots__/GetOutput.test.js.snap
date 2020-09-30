@@ -4,7 +4,7 @@ exports[`should render get output component 1`] = `
 <div>
   <form>
     <div
-      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column"
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
     >
       <div
         className="MuiGrid-root formBox"

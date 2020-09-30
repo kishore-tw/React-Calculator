@@ -3,7 +3,7 @@
 exports[` test suite for Calculator should render calculator component for given parameters 1`] = `
 <form>
   <div
-    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column"
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
   >
     <div
       className="MuiGrid-root formBox"
